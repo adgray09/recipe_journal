@@ -7,6 +7,10 @@ from .models import Page
 class PageListView(ListView):
     model = Page
     
+    def get(self, request):
+        pages = self.get_queryset().all()
+        return render(request, 'page_list.html', {"pages": pages})
+    
     
     
     

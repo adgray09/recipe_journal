@@ -23,3 +23,5 @@ class Ingredient(models.Model):
     
     
     
+    
+    

@@ -22,6 +22,7 @@ from recipes.views import PageListView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('landing.urls')),
     path('recipe', PageListView.as_view(), name='recipe-page'),
-    path('', include('recipes.urls')),
+    path('recipe', include('recipes.urls')),
 ] 

@@ -9,3 +9,6 @@ class LandingView(CreateView):
     def get(self, request):
         """ returns landing page. """
         return render(request, 'landing/index.html')
+    
+    def __str__(self):
+        return self.name

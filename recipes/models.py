@@ -17,6 +17,9 @@ class Page(models.Model):
     
     created = models.DateTimeField(auto_now_add=True)    
     
+    def __str__(self):
+        return self.recipe_title
+    
 class Ingredient(models.Model):
     
     page = models.ForeignKey(Page, on_delete=models.CASCADE)

@@ -25,4 +25,4 @@ urlpatterns = [
     path('', include('landing.urls')),
     path('recipe', PageListView.as_view(), name='recipe-page'),
     path('recipe', include('recipes.urls')),
-] 
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

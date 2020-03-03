@@ -14,7 +14,7 @@ class PageListView(ListView):
         pages = self.get_queryset().all()
         return render(request, 'recipes/page_list.html', {"pages": pages})
     
-def index(request):
+def recipe_page(request):
     recipes_list = Page.objects.all()
     context = {"recipes_list": recipes_list,}
     template = loader.get_template('recipes/index.html')

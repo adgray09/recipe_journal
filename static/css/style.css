@@ -16,7 +16,7 @@
 	{
 		margin: 0;
 		padding: 0;
-		background: #161616;
+		background: white;
 	}
 
 	body,input,textarea,select
@@ -59,7 +59,7 @@
 	a
 	{
 		text-decoration: none;
-		color: #80BA8E;
+		color: rgb(112,112,112);
 	}
 	
 	a:hover
@@ -771,7 +771,7 @@
 	#header
 	{
 		position: relative;
-		background: url(../images/header.jpg) no-repeat bottom center;
+		background: url(../images/pic01.jpg) no-repeat bottom center;
 		background-attachment: fixed;
 		background-size: cover;
 		text-align: center;
@@ -810,7 +810,7 @@
 			font-weight: 300;
 			line-height: 1em;
 			font-size: 7em;
-			color: #FFF;
+			color: rgb(112,112,112);
 			letter-spacing: -0.05em;
 			margin: 0 0 0.125em 0;
 		}
@@ -866,14 +866,15 @@
 				letter-spacing: 0.06em;
 				text-decoration: none;
 				text-transform: uppercase;
-				font-size: 1.1em;
-				outline: 0;
-				color: #FFF;
+				font-size: 2em;
+				outline: 1;
+				color: blackß;
+				font-weight: bold;
 			}
 
 			#nav li.active a
 			{
-				color: #FFF;
+				color: rgb(112,112,112) ;
 			}
 
 			#nav > ul > li > ul
@@ -986,7 +987,7 @@
 	{
 		position: relative;
 		text-align: center;
-		background: url(../images/header.jpg) no-repeat center center;
+		background: url(../images/pic01.jpg) no-repeat center center;
 		background-attachment: fixed;
 		background-size: cover;
 	}

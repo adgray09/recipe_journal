@@ -1,12 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
-{ }
-  <h3>Sign Up <small class="text-muted">to add your own recipes!</small></h3>
   <hr>
       <div class="row">
         <div class="col">
-          <form method="post" class="mx-auto">
+          <form method="post" class="mx-auto" style="text-align: center;">
             {% csrf_token %}
             {% for field in form %}
                 {% for error in field.errors %}
@@ -15,6 +13,7 @@
                 <div class="form-group row">
                     <div class="col-8">
                       <label for="id_{{ field.name }}">{{ field.label|title }}:</label>
+                      <br>
                       <input class="form-control" type="{% if "password" in field.name %}password{% else %}text{% endif %}" name="{{ field.name }}" id="id_{{ field.name }}" required>
                     </div>
                 </div>

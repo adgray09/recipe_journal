@@ -26,6 +26,6 @@ urlpatterns = [
     path('', include('landing.urls')),
     path('signup/', SignupView.as_view(), name='signup'),
     path('accounts/', include('django.contrib.auth.urls')),
-    path('recipe', PageListView.as_view(), name='recipe-page'),
-    path('recipe', include('recipes.urls')),
+    path('recipe/', PageListView.as_view(), name='recipe-page'),
+    path('recipe/', include('recipes.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

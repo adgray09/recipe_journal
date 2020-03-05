@@ -59,7 +59,7 @@
 	a
 	{
 		text-decoration: none;
-		color: rgb(112,112,112);
+		color: gray;
 	}
 	
 	a:hover
@@ -810,7 +810,7 @@
 			font-weight: 300;
 			line-height: 1em;
 			font-size: 7em;
-			color: rgb(112,112,112);
+			color: gray;
 			letter-spacing: -0.05em;
 			margin: 0 0 0.125em 0;
 		}
@@ -919,12 +919,12 @@
 	
 	#footer header h2
 	{
-		color: #FFF !important;
+		color: gray !important;
 	}
 	
 	#footer header .byline
 	{
-		color: rgba(255,255,255,.2);
+		color: gray;
 	}
 
 /*********************************************************************************/

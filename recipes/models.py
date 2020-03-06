@@ -2,12 +2,14 @@ from django.db import models
 from django.conf import settings
 
 # Create your models here.
+class Meta:
+    verbose_name_plural = "pages"
 
 class Page(models.Model):
     
-    author = models.CharField(max_length=100)
-    
     recipe_title = models.CharField(max_length=100)
+    
+    author = models.CharField(max_length=100)
     
     ingredients = models.TextField()
     

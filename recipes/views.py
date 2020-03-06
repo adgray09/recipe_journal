@@ -18,6 +18,8 @@ class PageListView(ListView):
         pages = self.get_queryset().all()
         return render(request, 'recipes/page_list.html', {"pages": pages})
     
+    
+    
 def recipe_page(request):
     recipes_list = Page.objects.all()
     context = {"recipes_list": recipes_list,}
@@ -36,6 +38,11 @@ class PageCreateView(CreateView):
             recipe = form.save()
             return HttpResponseRedirect(reverse_lazy('landing'))
         return render(request, 'landing.html', {'form': form})
+
+def delete(request, page_pk):
+        query = Page.objects.get(pk=page_pk)
+        query.delete()
+        return HttpResponse("Deleted!")
             
 
         

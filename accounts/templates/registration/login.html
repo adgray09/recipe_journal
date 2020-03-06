@@ -18,7 +18,7 @@
         <nav id="nav">
           <ul>
             <li class="active"><a href="{% url 'landing' %}">Home</a></li>
-            <li><a href="about.html">About us</a></li>
+            <li><a href="#">About us</a></li>
             <!-- <li><a href="added_recipes.html">Your recipes</a></li> -->
             {% if user.is_authenticated %}
             <li><a href="{% url 'new_recipe' %}">Add recipe</a></li>

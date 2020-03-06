@@ -6,6 +6,7 @@
 </p>
 
 > A website where you can log your recipes so you never lose them!
+> Built for simplicity so that users can have their recipes easily accessible
 
 ## Install
 

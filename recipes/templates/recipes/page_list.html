@@ -1,5 +1,4 @@
 {% load static %}
-{% for Page in pages %}
 
 <head>
     <title>Recipe Journal</title>
@@ -11,9 +10,9 @@
     <script src="js/skel.min.js"></script>
     <script src="js/skel-panels.min.js"></script>
     <script src="js/init.js"></script>
-        <link rel="stylesheet" href="{% static 'css/skel-noscript.css' %}" />
-        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-        <link rel="stylesheet" href="{% static 'css/style-desktop.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/skel-noscript.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style-desktop.css' %}" />
 </head>
 
 
@@ -24,7 +23,7 @@
             <ul>
                 <li class="active"><a href="{% url 'landing' %}">Home</a></li>
                 <li><a href="#">About us</a></li>
-
+                
                 {% if user.is_authenticated %}
                 
                 <li><a href="{% url 'recipe_page' %}">Your recipes</a></li>
@@ -37,19 +36,21 @@
             </ul>
         </nav>
     </div>
-
-<!-- Main -->
-<div id="main">
-    <div id="content" class="container">
-        <section>
-            <h1> Created by: {{ Page.author }}</h1>	
-            <p> Recipe for: {{ Page.recipe_title }}</p>
-            <p> Ingredients: {{ Page.ingredients }}</p>
-            <p> Description: {{ Page.description }}</p>
-            <p> Created on {{ Page.created }}</p>
-            <td><a href="/delete/{{ Page.id }}">Delete</a></td>
-
-        </section>
+    
+    <!-- Main -->
+    <div id="main">
+        <div style="font-size: 20px;" id="content" class="container">
+            {% for Page in pages %}
+            <section>
+                <h1> Created by: {{ Page.author }}</h1>	
+                <br>
+                <p> Recipe for: {{ Page.recipe_title }}</p>
+                <p> Ingredients: {{ Page.ingredients }}</p>
+                <p> Description: {{ Page.description }}</p>
+                <p> Created on {{ Page.created }}</p>
+            </section>
+            <hr>
+            {% endfor %}
     </div>
 </div>
 <!-- /Main -->
@@ -65,6 +66,15 @@
 <!-- /Tweet -->
 
 <!-- Footer -->
+<!-- /Footer -->
+
+<!-- Copyright -->
+<div id="copyright">
+    <div class="container">
+        <!-- Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>) -->
+    </div>
+</div>
+
 <div id="footer">
     <div class="container">
         <section>
@@ -81,13 +91,4 @@
         </section>
     </div>
 </div>
-<!-- /Footer -->
-
-<!-- Copyright -->
-<div id="copyright">
-    <div class="container">
-        <!-- Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>) -->
-    </div>
-</div>
-{% endfor %}
 

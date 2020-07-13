@@ -25,7 +25,7 @@ SECRET_KEY = '(s*f*#v%#h18^4=_=8v*_%&%#*%uc9xhlywfvl-jp+udc*e*x6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['recipe-journal.dev.alexdgray.tech']
 
 
 # Application definition

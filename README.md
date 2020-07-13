@@ -1,6 +1,10 @@
 # recipe_journal
-
+<p>
 https://img.shields.io/circleci/build/github/adgray09/recipe_journal
+</p>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
+</p>
 
 <h1 align="center">Recipe Journal</h1>
 <p>

@@ -7,7 +7,7 @@
 * [About the Project](#About-the-Project)
 	* [Built With](#Built-With)
 * [Getting Started](#Getting-Started)
-	* [Installation/Runninh](#Installation/Running)
+	* [Installation/Running](#Installation/Running)
 * [Creator](#👤Creator)
  
  # About the Project 
@@ -25,7 +25,7 @@ The tools used to build this project includes:
 # Getting Started
 Download [Docker Desktop](https://www.docker.com/products/docker-desktop) for Mac or Windows. [Docker Compose](https://docs.docker.com/compose) will be automatically installed.
 
-## Installation/running
+## Installation/Running
 the following instructions will get this project working on your system
 1. Build image <br>
 ```$ docker-compose build ```

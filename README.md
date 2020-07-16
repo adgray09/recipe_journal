@@ -27,9 +27,9 @@ Download [Docker Desktop](https://www.docker.com/products/docker-desktop) for Ma
 
 ## Installation/running
 the following instructions will get this project working on your system
-1. Build image 
+1. Build image <br>
 ```$ docker-compose build ```
-2. Run image in container
+2. Run image in container <br>
 ```$ docker-compose up ```
  
  

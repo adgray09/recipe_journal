@@ -1,26 +1,42 @@
-# recipe_journal
-<p>
-<img src="https://img.shields.io/circleci/build/github/adgray09/recipe_journal" />
-</p>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
-</p>
+### Recipe journal Heroku app ( https://recipejournal.herokuapp.com/ )
 
-<h1 align="center">Recipe Journal</h1>
+# recipe_journal <img alt="CircleCI" src="https://img.shields.io/circleci/build/github/adgray09/recipe_journal"> <img  alt="Version"  src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
 
-> A website where you can log your recipes so you never lose them!
-> Built for simplicity so that users can have their recipes easily accessible
 
-## Install
+# Table of Contents:
+* [About the Project](#About-the-Project)
+	* [Built With](#Built-With)
+* [Getting Started](#Getting-Started)
+	* [Installation/Runninh](#Installation/Running)
+* [Creator](#Creator)
+ 
+ # About the Project 
+A website where you can log your recipes so you never lose them!
+Built for simplicity so that users can have their recipes easily accessible
 
-```sh
-git clone git@github.com:adgray09/recipe_journal.git
-```
+## Built With
+The tools used to build this project includes:
 
-## Live
-[Recipe Journal](https://recipejournal.herokuapp.com/)
+* Python (Coding Language)
+* Django (Framework)
+* Postgres (Database)
+* Heroku (Deployment)
 
+# Getting Started
+Download [Docker Desktop](https://www.docker.com/products/docker-desktop) for Mac or Windows. [Docker Compose](https://docs.docker.com/compose) will be automatically installed.
+
+## Installation/running
+the following instructions will get this project working on your system
+1. Build image 
+```$ docker-compose build ```
+2. Run image in container
+```$ docker-compose up ```
+ 
+ 
 ## 👤 Creator
-
-**Alexander Gray**
+*Alexander Gray*
 * Github: [@adgray09](https://github.com/adgray09)
+* Linkedin [@Alex Gray](https://www.linkedin.com/in/alexander-gray-42b439193/)
+* Email: alexandergray37@gmail.com
+
+

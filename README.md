@@ -8,7 +8,7 @@
 	* [Built With](#Built-With)
 * [Getting Started](#Getting-Started)
 	* [Installation/Runninh](#Installation/Running)
-* [Creator](#Creator)
+* [Creator](#👤Creator)
  
  # About the Project 
 A website where you can log your recipes so you never lose them!
@@ -33,7 +33,7 @@ the following instructions will get this project working on your system
 ```$ docker-compose up ```
  
  
-## 👤 Creator
+## 👤Creator
 *Alexander Gray*
 * Github: [@adgray09](https://github.com/adgray09)
 * Linkedin [@Alex Gray](https://www.linkedin.com/in/alexander-gray-42b439193/)
